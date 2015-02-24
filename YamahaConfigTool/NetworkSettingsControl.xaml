@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="YamahaConfigTool.NetworkSettingsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignHeight="555" d:DesignWidth="456">
+    <Grid Margin="0,0,0,-119" Height="576" VerticalAlignment="Top">
+        <RadioButton x:Name="dhcpRadioButton" Content="Obtain IP Address automatically" HorizontalAlignment="Left" Margin="20,52,0,0" VerticalAlignment="Top"/>
+        <GroupBox HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Height="305" Width="231" BorderThickness="2">
+            <GroupBox.Header>
+                <RadioButton x:Name="manualRadioButton" Content="Use the following IP address settings" />
+            </GroupBox.Header>
+            <StackPanel HorizontalAlignment="Left" Height="275" Margin="0,10,-2,-22" VerticalAlignment="Top" Width="221">
+                <Label Content="IP Address"/>
+                <TextBox x:Name="ipAddressTextBox" Height="23" TextWrapping="Wrap" Margin="0,0,101,0" Text="192.168.1.126"/>
+                <Label Content="Subnet Mask" Margin="0,0,101,0"/>
+                <TextBox x:Name="subnetMaskTextBox" Height="23" TextWrapping="Wrap" Margin="0,0,101,0" Text="255.255.255.255"/>
+                <Label Content="Defualt Gateway" Margin="0,0,101,0"/>
+                <TextBox x:Name="defaultGatewayTextBox" Height="23" TextWrapping="Wrap" Text="192.168.1.1" Margin="0,0,101,0"/>
+                <Label Content="Primary DNS Server" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="primaryDNSServerTextBox" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0.0.0.0"/>
+                <Label Content="Secondary DNS Server" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140"/>
+                <TextBox x:Name="secondaryDNSServerTextBox" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Text="0.0.0.0" HorizontalAlignment="Left" Width="120"/>
+            </StackPanel>
+        </GroupBox>
+
+        <ComboBox x:Name="networkStandbyComboBox" HorizontalAlignment="Left" Margin="246,65,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Network Standby" HorizontalAlignment="Left" Margin="246,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="Network Name" HorizontalAlignment="Left" Margin="246,92,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="networkNameTextBox" HorizontalAlignment="Left" Height="23" Margin="246,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <StackPanel HorizontalAlignment="Left" Height="235" Margin="246,173,0,0" VerticalAlignment="Top" Width="120">
+            <TextBox Height="23" TextWrapping="Wrap"/>
+            <TextBox Height="23" TextWrapping="Wrap"/>
+            <TextBox Height="23" TextWrapping="Wrap"/>
+            <TextBox Height="23" TextWrapping="Wrap"/>
+            <TextBox Height="23" TextWrapping="Wrap"/>
+            <TextBox Height="23" TextWrapping="Wrap"/>
+            <TextBox Height="23" TextWrapping="Wrap"/>
+            <TextBox Height="23" TextWrapping="Wrap"/>
+            <TextBox Height="23" TextWrapping="Wrap"/>
+            <TextBox Height="23" TextWrapping="Wrap"/>
+        </StackPanel>
+        <Label Content="MAC Address Filter List" HorizontalAlignment="Left" Margin="246,146,0,0" VerticalAlignment="Top"/>
+        <Button Content="Apply Settings" HorizontalAlignment="Left" Margin="20,406,0,0" VerticalAlignment="Top" Width="75" Click="ApplySettings_Click"/>
+        <CheckBox Content="Change program connection settings" HorizontalAlignment="Left" Margin="20,359,0,0" VerticalAlignment="Top" IsChecked="True"/>
+    </Grid>
+</UserControl>

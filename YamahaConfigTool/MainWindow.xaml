@@ -1,0 +1,26 @@
+﻿<Window x:Class="YamahaConfigTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" xmlns:my="clr-namespace:YamahaConfigTool" Height="505.149" Width="738.15">
+    <DockPanel  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+        <Menu x:Name="menu" VerticalAlignment="Top" HorizontalAlignment="Stretch" DockPanel.Dock="Top">
+            <MenuItem Header="Config">
+                <MenuItem Header="Connection Settings"  Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Tree View" IsCheckable="True" IsChecked="True" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Controller" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Network" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Exit" Click="MenuItem_Click"></MenuItem>
+
+            </MenuItem>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom">
+            <Label x:Name ="statusLabel" Content="No connection"/>
+        </StatusBar>
+        <DockPanel x:Name="mainDockPanel" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" DockPanel.Dock="Top">
+            <DockPanel Name="dockPanel" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            </DockPanel>
+        </DockPanel>
+
+    </DockPanel>
+
+</Window>

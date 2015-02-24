@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="YamahaConfigTool.exe" version="1.0.0.0" publicKeyToken="40b9743f0871c58e" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="YamahaConfigTool" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="YamahaConfigTool.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PhoenixControlLib.dll" size="13312">
+      <assemblyIdentity name="PhoenixControlLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>YIhcMe/Aq6GdZ1DTxIVHY15ACAg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.Toolkit.dll" size="900608">
+      <assemblyIdentity name="Xceed.Wpf.Toolkit" version="2.0.0.0" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Fq8PQ9tH/uDJBn47ep8LdlQpbJ0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="YamahaConfigTool.exe" size="34070528">
+      <assemblyIdentity name="YamahaConfigTool" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>yGW523k9moQLO1u5wnGPohX+tvI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="YamahaConfigTool.exe.config" size="161">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XhmNWIUSMbaVlaWABznwa4dcyj0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 8.1, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=rayond-PC\rayond" issuerKeyHash="8f5ff0d59354e7eafee9b272367b113399441f20" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>gSPYLAF8/aY8wmy5dN92UVMDKhg=</DigestValue></Reference></SignedInfo><SignatureValue>NfZ7dLgi69osXbdW2nPCWHOpMpSPZEI44SoH9r0xT/u7wMt/4YIhwcrZfkqrvjzxlWXmfzioGFCMDV+1I5IGTYw4Bn3YvGEl/m3I39mCq2eIOLc1tg5POJcj40eDFaBIvrSRqDNNEs5WHZeLuGt7RZjrm+wtLWt/GQvw5uknsRM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qZQaDnKhb7AGeG8HF2TnJ1R0ztDnbsgLewZLEV/wU36yLRlLcug+bWXVS55m70p0wK6w5y1JKVnw6FjKQeebfdALyfPtzJmAvqzzRlv4MUlDHGDUbrc7zn1uFMdg2y2bOudagD40s7a96iM1Ldiv7esTPWtU4PjbLZmR78ri8J8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="182a03535176df74b96cc23ca6fd7c012cd82381" Description="" Url=""><as:assemblyIdentity name="YamahaConfigTool.exe" version="1.0.0.0" publicKeyToken="40b9743f0871c58e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=rayond-PC\rayond</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>IFxacLdIaUK5cRXHVuKBn/RY4Dw=</DigestValue></Reference></SignedInfo><SignatureValue>Us7x3HSi0NnHEQd0zwiB2Rjg4yRVlJpmmgEpc+RfzXwbuTjJANoYXmpE++Kob+3N1uybZwFOxVBnlszLwiup8m1Lf/uUrGZlRNleV7xdxnvD5y/rdatPEQFVer0Njigfj53tOjmAf9FLYUsIJS/zL+rafW1y+mmgNOa3aAza4YE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qZQaDnKhb7AGeG8HF2TnJ1R0ztDnbsgLewZLEV/wU36yLRlLcug+bWXVS55m70p0wK6w5y1JKVnw6FjKQeebfdALyfPtzJmAvqzzRlv4MUlDHGDUbrc7zn1uFMdg2y2bOudagD40s7a96iM1Ldiv7esTPWtU4PjbLZmR78ri8J8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQXx1OjtY3ZLtLV+q+aHIPUTANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAAcgBhAHkAbwBuAGQALQBQAEMAXAByAGEAeQBvAG4AZDAeFw0xNDAxMDEyMDQxNDJaFw0xNTAxMDIwMjQxNDJaMCsxKTAnBgNVBAMeIAByAGEAeQBvAG4AZAAtAFAAQwBcAHIAYQB5AG8AbgBkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCplBoOcqFvsAZ4bwcXZOcnVHTO0OduyAt7BksRX/BTfrItGUty6D5tZdVLnmbvSnTArrDnLUkpWfDoWMpB55t90AvJ8+3MmYC+rPNGW/gxSUMcYNRutzvOfW4Ux2DbLZs651qAPjSztr3qIzUt2K/t6xM9a1Tg+NstmZHvyuLwnwIDAQABMA0GCSqGSIb3DQEBBQUAA4GBADYqGxbCnplL/OUJOoN5cicGB85NwXMIGmFzvAFowvCOEI/SrEEMtKU7iwO4Oj6125JJDGn3gt8YqeJPQfKLHXp0gHwuaIX48smnTkZ5cE32aO+lKr6E6hLG9Y/S13d13GeEjRYXDISQ2KEkLKkoTBMKNvz674yawG8fqCdhoZei</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
